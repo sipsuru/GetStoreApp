@@ -25,7 +25,7 @@
     <Optimize>false</Optimize>
     <OutputType>WinExe</OutputType>
     <Platforms>x86;x64;ARM64</Platforms>
-    <PublishAot>false</PublishAot>
+    <PublishAot>true</PublishAot>
     <RootNamespace>GetStoreApp</RootNamespace>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
     <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
@@ -523,10 +523,10 @@
   </Target>
 
   <!-- 捆绑前对二进制文件进行后处理 -->
-  <Target Name="DigitialSignGeneratedExeFile" AfterTargets="GenerateSingleFileBundle" DependsOnTargets="PrepareForBundle" Condition="'$(Configuration)|$(PublishAot)' == 'Release|true'">
-    <!-- 对生成的 GetStoreApp.exe 文件进行数字签名 -->
+  <!--<Target Name="DigitialSignGeneratedExeFile" AfterTargets="GenerateSingleFileBundle" DependsOnTargets="PrepareForBundle" Condition="'$(Configuration)|$(PublishAot)' == 'Release|true'">
+    --><!-- 对生成的 GetStoreApp.exe 文件进行数字签名 --><!--
     <Exec Command="$(PkgMicrosoft_Windows_SDK_BuildTools)\bin\10.0.26100.0\$(CompileProcessorArchitecture)\signtool.exe sign /f $(SolutionDir)GetStoreAppPackage\GetStoreAppPackage_SignKey.pfx /t http://timestamp.digicert.com /fd SHA256 $(NativeOutputPath)$(AssemblyName).exe" />
-  </Target>
+  </Target>-->
 
   <!-- 将需要的文件嵌入到包资源索引文件（Pri）中 -->
   <Target Name="AddMainAppEmbeddedItems" BeforeTargets="_GenerateProjectPriFileCore" AfterTargets="_CalculateInputsForGenerateProjectPriFileCore">

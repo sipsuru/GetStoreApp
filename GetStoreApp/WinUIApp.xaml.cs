@@ -74,9 +74,9 @@ namespace GetStoreApp
                     downloadItem.Logo = new Uri("ms-appx:///Assets/Icon/Control/Download.png");
                     jumpList.Items.Add(downloadItem);
 
-                    JumpListItem webItem = JumpListItem.CreateWithArguments("JumpList Web", ResourceService.GetLocalized("Application/Web"));
-                    webItem.Logo = new Uri("ms-appx:///Assets/Icon/Control/Web.png");
-                    jumpList.Items.Add(webItem);
+                    //JumpListItem webItem = JumpListItem.CreateWithArguments("JumpList Web", ResourceService.GetLocalized("Application/Web"));
+                    //webItem.Logo = new Uri("ms-appx:///Assets/Icon/Control/Web.png");
+                    //jumpList.Items.Add(webItem);
 
                     await jumpList.SaveAsync();
                 });

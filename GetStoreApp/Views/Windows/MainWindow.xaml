@@ -396,7 +396,7 @@
                         </ToolTipService.ToolTip>
                     </NavigationViewItem>
 
-                    <NavigationViewItem Tag="Web">
+                    <NavigationViewItem Tag="Web" Visibility="Collapsed">
 
                         <NavigationViewItem.Content>
                             <TextBlock

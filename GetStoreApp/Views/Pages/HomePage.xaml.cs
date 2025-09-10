@@ -56,13 +56,13 @@ namespace GetStoreApp.Views.Pages
                 ImagePath = "ms-appx:///Assets/Icon/Control/Download.png",
                 Tag = "Download"
             },
-            new ControlItemModel()
-            {
-                Title = ResourceService.GetLocalized("Home/Web"),
-                Description = ResourceService.GetLocalized("Home/WebDescription"),
-                ImagePath = "ms-appx:///Assets/Icon/Control/Web.png",
-                Tag = "Web"
-            },
+            //new ControlItemModel()
+            //{
+            //    Title = ResourceService.GetLocalized("Home/Web"),
+            //    Description = ResourceService.GetLocalized("Home/WebDescription"),
+            //    ImagePath = "ms-appx:///Assets/Icon/Control/Web.png",
+            //    Tag = "Web"
+            //},
         ];
 
         public HomePage()
@@ -85,7 +85,7 @@ namespace GetStoreApp.Views.Pages
                     {
                         try
                         {
-                            await Launcher.LaunchUriAsync(new Uri("getstoreappwebbrowser:"));
+                            await Launcher.LaunchUriAsync(new Uri("https://store.rg-adguard.net"));
                         }
                         catch (Exception e)
                         {
