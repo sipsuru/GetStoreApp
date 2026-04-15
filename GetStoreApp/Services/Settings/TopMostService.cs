@@ -22,11 +22,8 @@ namespace GetStoreApp.Services.Settings
 
             private set
             {
-                if (!Equals(_topMostValue, value))
-                {
-                    _topMostValue = value;
-                    PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(TopMostValue)));
-                }
+                _topMostValue = value;
+                PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(TopMostValue)));
             }
         }
 

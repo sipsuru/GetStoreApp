@@ -35,11 +35,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_updateAppResultKind, value))
-                {
-                    _updateAppResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateAppResultKind)));
-                }
+                _updateAppResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateAppResultKind)));
             }
         }
 
@@ -51,11 +48,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!string.Equals(_primaryText, value))
-                {
-                    _primaryText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PrimaryText)));
-                }
+                _primaryText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PrimaryText)));
             }
         }
 
@@ -67,11 +61,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!string.Equals(_closeText, value))
-                {
-                    _closeText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CloseText)));
-                }
+                _closeText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CloseText)));
             }
         }
 
@@ -83,11 +74,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!string.Equals(_updateDownloadString, value))
-                {
-                    _updateDownloadString = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateDownloadString)));
-                }
+                _updateDownloadString = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateDownloadString)));
             }
         }
 
@@ -99,11 +87,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isCancelingUpdate, value))
-                {
-                    _isCancelingUpdate = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCancelingUpdate)));
-                }
+                _isCancelingUpdate = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCancelingUpdate)));
             }
         }
 

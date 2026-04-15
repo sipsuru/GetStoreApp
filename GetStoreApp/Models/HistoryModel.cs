@@ -15,11 +15,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isQuerying, value))
-                {
-                    _isQuerying = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsQuerying)));
-                }
+                _isQuerying = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsQuerying)));
             }
         }
 

@@ -65,11 +65,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_completedResultKind, value))
-                {
-                    _completedResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CompletedResultKind)));
-                }
+                _completedResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CompletedResultKind)));
             }
         }
 
@@ -81,11 +78,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isSelectMode, value))
-                {
-                    _isSelectMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
-                }
+                _isSelectMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
             }
         }
 

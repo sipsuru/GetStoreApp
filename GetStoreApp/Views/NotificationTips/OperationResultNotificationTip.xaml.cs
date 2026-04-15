@@ -21,11 +21,8 @@ namespace GetStoreApp.Views.NotificationTips
 
             set
             {
-                if (!Equals(_isSuccessOperation, value))
-                {
-                    _isSuccessOperation = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSuccessOperation)));
-                }
+                _isSuccessOperation = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSuccessOperation)));
             }
         }
 
@@ -37,11 +34,8 @@ namespace GetStoreApp.Views.NotificationTips
 
             set
             {
-                if (!string.Equals(_operationContent, value))
-                {
-                    _operationContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(OperationContent)));
-                }
+                _operationContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(OperationContent)));
             }
         }
 

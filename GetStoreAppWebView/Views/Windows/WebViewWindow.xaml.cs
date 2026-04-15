@@ -80,11 +80,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_windowSystemBackdrop, value))
-                {
-                    _windowSystemBackdrop = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
-                }
+                _windowSystemBackdrop = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
             }
         }
 
@@ -96,11 +93,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_windowTheme, value))
-                {
-                    _windowTheme = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
-                }
+                _windowTheme = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
             }
         }
 
@@ -112,11 +106,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_isWindowMaximized, value))
-                {
-                    _isWindowMaximized = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
-                }
+                _isWindowMaximized = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
             }
         }
 
@@ -128,11 +119,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_canGoBack, value))
-                {
-                    _canGoBack = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanGoBack)));
-                }
+                _canGoBack = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanGoBack)));
             }
         }
 
@@ -144,11 +132,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_canGoForward, value))
-                {
-                    _canGoForward = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanGoForward)));
-                }
+                _canGoForward = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanGoForward)));
             }
         }
 
@@ -160,11 +145,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_isLoading, value))
-                {
-                    _isLoading = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoading)));
-                }
+                _isLoading = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoading)));
             }
         }
 
@@ -176,11 +158,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!string.Equals(_webTitle, value))
-                {
-                    _webTitle = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WebTitle)));
-                }
+                _webTitle = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WebTitle)));
             }
         }
 
@@ -192,11 +171,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_isDownloadClickEnabled, value))
-                {
-                    _isDownloadClickEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsDownloadClickEnabled)));
-                }
+                _isDownloadClickEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsDownloadClickEnabled)));
             }
         }
 
@@ -208,11 +184,8 @@ namespace GetStoreAppWebView.Views.Windows
 
             set
             {
-                if (!Equals(_isEnabled, value))
-                {
-                    _isEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsEnabled)));
-                }
+                _isEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsEnabled)));
             }
         }
 

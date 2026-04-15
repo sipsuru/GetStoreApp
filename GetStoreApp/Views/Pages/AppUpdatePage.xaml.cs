@@ -60,11 +60,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_appUpdateResultKind, value))
-                {
-                    _appUpdateResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppUpdateResultKind)));
-                }
+                _appUpdateResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppUpdateResultKind)));
             }
         }
 
@@ -76,11 +73,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isCheckingUpdate, value))
-                {
-                    _isCheckingUpdate = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCheckingUpdate)));
-                }
+                _isCheckingUpdate = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCheckingUpdate)));
             }
         }
 
@@ -92,11 +86,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_appUpdateFailedContent, value))
-                {
-                    _appUpdateFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppUpdateFailedContent)));
-                }
+                _appUpdateFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppUpdateFailedContent)));
             }
         }
 

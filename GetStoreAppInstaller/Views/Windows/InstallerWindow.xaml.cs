@@ -139,11 +139,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_windowSystemBackdrop, value))
-                {
-                    _windowSystemBackdrop = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
-                }
+                _windowSystemBackdrop = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
             }
         }
 
@@ -155,11 +152,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_windowTheme, value))
-                {
-                    _windowTheme = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
-                }
+                _windowTheme = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
             }
         }
 
@@ -171,11 +165,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isWindowMaximized, value))
-                {
-                    _isWindowMaximized = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
-                }
+                _isWindowMaximized = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
             }
         }
 
@@ -187,11 +178,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isParseEmpty, value))
-                {
-                    _isParseEmpty = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsParseEmpty)));
-                }
+                _isParseEmpty = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsParseEmpty)));
             }
         }
 
@@ -203,11 +191,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isLoadCompleted, value))
-                {
-                    _isLoadCompleted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
-                }
+                _isLoadCompleted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
             }
         }
 
@@ -219,11 +204,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_canDragFile, value))
-                {
-                    _canDragFile = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanDragFile)));
-                }
+                _canDragFile = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CanDragFile)));
             }
         }
 
@@ -235,11 +217,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isParseSuccessfully, value))
-                {
-                    _isParseSuccessfully = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsParseSuccessfully)));
-                }
+                _isParseSuccessfully = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsParseSuccessfully)));
             }
         }
 
@@ -251,11 +230,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_packageFileType, value))
-                {
-                    _packageFileType = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFileType)));
-                }
+                _packageFileType = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFileType)));
             }
         }
 
@@ -267,11 +243,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_packageIconImage, value))
-                {
-                    _packageIconImage = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageIconImage)));
-                }
+                _packageIconImage = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageIconImage)));
             }
         }
 
@@ -283,11 +256,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageName, value))
-                {
-                    _packageName = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageName)));
-                }
+                _packageName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageName)));
             }
         }
 
@@ -299,11 +269,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_publisherDisplayName, value))
-                {
-                    _publisherDisplayName = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherDisplayName)));
-                }
+                _publisherDisplayName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherDisplayName)));
             }
         }
 
@@ -331,11 +298,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageDescription, value))
-                {
-                    _packageDescription = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageDescription)));
-                }
+                _packageDescription = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageDescription)));
             }
         }
 
@@ -347,11 +311,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageFamilyName, value))
-                {
-                    _packageFamilyName = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFamilyName)));
-                }
+                _packageFamilyName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFamilyName)));
             }
         }
 
@@ -363,11 +324,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageFullName, value))
-                {
-                    _packageFullName = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFullName)));
-                }
+                _packageFullName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFullName)));
             }
         }
 
@@ -379,11 +337,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_supportedArchitecture, value))
-                {
-                    _supportedArchitecture = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SupportedArchitecture)));
-                }
+                _supportedArchitecture = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SupportedArchitecture)));
             }
         }
 
@@ -395,11 +350,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_isFramework, value))
-                {
-                    _isFramework = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFramework)));
-                }
+                _isFramework = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsFramework)));
             }
         }
 
@@ -411,11 +363,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_appInstalledState, value))
-                {
-                    _appInstalledState = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInstalledState)));
-                }
+                _appInstalledState = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInstalledState)));
             }
         }
 
@@ -427,11 +376,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_appInstallerSourceLink, value))
-                {
-                    _appInstallerSourceLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInstallerSourceLink)));
-                }
+                _appInstallerSourceLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInstallerSourceLink)));
             }
         }
 
@@ -443,11 +389,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isAppInstallerSourceLinkExisted, value))
-                {
-                    _isAppInstallerSourceLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInstallerSourceLinkExisted)));
-                }
+                _isAppInstallerSourceLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInstallerSourceLinkExisted)));
             }
         }
 
@@ -459,11 +402,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageSourceLink, value))
-                {
-                    _packageSourceLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageSourceLink)));
-                }
+                _packageSourceLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageSourceLink)));
             }
         }
 
@@ -475,11 +415,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isPackageSourceLinkExisted, value))
-                {
-                    _isPackageSourceLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackageSourceLinkExisted)));
-                }
+                _isPackageSourceLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackageSourceLinkExisted)));
             }
         }
 
@@ -491,11 +428,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_packageType, value))
-                {
-                    _packageType = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageType)));
-                }
+                _packageType = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageType)));
             }
         }
 
@@ -507,11 +441,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_hoursBetweenUpdateChecks, value))
-                {
-                    _hoursBetweenUpdateChecks = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(HoursBetweenUpdateChecks)));
-                }
+                _hoursBetweenUpdateChecks = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(HoursBetweenUpdateChecks)));
             }
         }
 
@@ -523,11 +454,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_updateBlocksActivation, value))
-                {
-                    _updateBlocksActivation = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateBlocksActivation)));
-                }
+                _updateBlocksActivation = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpdateBlocksActivation)));
             }
         }
 
@@ -539,11 +467,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_showPrompt, value))
-                {
-                    _showPrompt = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowPrompt)));
-                }
+                _showPrompt = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShowPrompt)));
             }
         }
 
@@ -555,11 +480,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_forceUpdateFromAnyVersion, value))
-                {
-                    _forceUpdateFromAnyVersion = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceUpdateFromAnyVersion)));
-                }
+                _forceUpdateFromAnyVersion = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceUpdateFromAnyVersion)));
             }
         }
 
@@ -571,11 +493,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_automaticBackgroundTask, value))
-                {
-                    _automaticBackgroundTask = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AutomaticBackgroundTask)));
-                }
+                _automaticBackgroundTask = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AutomaticBackgroundTask)));
             }
         }
 
@@ -587,11 +506,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isAppInstalled, value))
-                {
-                    _isAppInstalled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInstalled)));
-                }
+                _isAppInstalled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInstalled)));
             }
         }
 
@@ -603,11 +519,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isUpdateSettingsExisted, value))
-                {
-                    _isUpdateSettingsExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUpdateSettingsExisted)));
-                }
+                _isUpdateSettingsExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUpdateSettingsExisted)));
             }
         }
 
@@ -619,11 +532,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isInstalling, value))
-                {
-                    _isInstalling = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstalling)));
-                }
+                _isInstalling = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstalling)));
             }
         }
 
@@ -635,11 +545,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_installProgressValue, value))
-                {
-                    _installProgressValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallProgressValue)));
-                }
+                _installProgressValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallProgressValue)));
             }
         }
 
@@ -651,11 +558,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isInstallWaiting, value))
-                {
-                    _isInstallWaiting = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallWaiting)));
-                }
+                _isInstallWaiting = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallWaiting)));
             }
         }
 
@@ -667,11 +571,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isInstallFailed, value))
-                {
-                    _isInstallFailed = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallFailed)));
-                }
+                _isInstallFailed = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallFailed)));
             }
         }
 
@@ -683,11 +584,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!Equals(_isCancelInstall, value))
-                {
-                    _isCancelInstall = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCancelInstall)));
-                }
+                _isCancelInstall = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCancelInstall)));
             }
         }
 
@@ -699,11 +597,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_installStateString, value))
-                {
-                    _installStateString = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallStateString)));
-                }
+                _installStateString = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallStateString)));
             }
         }
 
@@ -715,11 +610,8 @@ namespace GetStoreAppInstaller.Views.Windows
 
             set
             {
-                if (!string.Equals(_installFailedInformation, value))
-                {
-                    _installFailedInformation = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallFailedInformation)));
-                }
+                _installFailedInformation = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallFailedInformation)));
             }
         }
 

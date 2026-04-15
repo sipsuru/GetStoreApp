@@ -39,11 +39,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_notificationValue, value))
-                {
-                    _notificationValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(NotificationValue)));
-                }
+                _notificationValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(NotificationValue)));
             }
         }
 
@@ -55,11 +52,8 @@ namespace GetStoreApp.Views.Pages
 
             private set
             {
-                if (!Equals(_notificationEnabled, value))
-                {
-                    _notificationEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(NotificationEnabled)));
-                }
+                _notificationEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(NotificationEnabled)));
             }
         }
 
@@ -71,11 +65,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isRestarting, value))
-                {
-                    _isRestarting = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRestarting)));
-                }
+                _isRestarting = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRestarting)));
             }
         }
 
@@ -87,11 +78,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_shellMenuValue, value))
-                {
-                    _shellMenuValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShellMenuValue)));
-                }
+                _shellMenuValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ShellMenuValue)));
             }
         }
 

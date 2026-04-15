@@ -67,11 +67,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isLoadCompleted, value))
-                {
-                    _isLoadCompleted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
-                }
+                _isLoadCompleted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
             }
         }
 
@@ -83,11 +80,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedItem, value))
-                {
-                    _selectedItem = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
-                }
+                _selectedItem = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
             }
         }
 
@@ -99,11 +93,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_displayName, value))
-                {
-                    _displayName = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DisplayName)));
-                }
+                _displayName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DisplayName)));
             }
         }
 
@@ -115,11 +106,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_description, value))
-                {
-                    _description = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
-                }
+                _description = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
             }
         }
 
@@ -131,11 +119,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_version, value))
-                {
-                    _version = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Version)));
-                }
+                _version = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Version)));
             }
         }
 
@@ -147,11 +132,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPackageLinkExisted, value))
-                {
-                    _isPackageLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackageLinkExisted)));
-                }
+                _isPackageLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackageLinkExisted)));
             }
         }
 
@@ -163,11 +145,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_packageLink, value))
-                {
-                    _packageLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageLink)));
-                }
+                _packageLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageLink)));
             }
         }
 
@@ -179,11 +158,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_author, value))
-                {
-                    _author = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Author)));
-                }
+                _author = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Author)));
             }
         }
 
@@ -195,11 +171,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_publisher, value))
-                {
-                    _publisher = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Publisher)));
-                }
+                _publisher = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Publisher)));
             }
         }
 
@@ -211,11 +184,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPublisherLinkExisted, value))
-                {
-                    _isPublisherLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPublisherLinkExisted)));
-                }
+                _isPublisherLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPublisherLinkExisted)));
             }
         }
 
@@ -227,11 +197,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_publisherLink, value))
-                {
-                    _publisherLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherLink)));
-                }
+                _publisherLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherLink)));
             }
         }
 
@@ -243,11 +210,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPublisherSupportLinkExisted, value))
-                {
-                    _isPublisherSupportLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPublisherSupportLinkExisted)));
-                }
+                _isPublisherSupportLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPublisherSupportLinkExisted)));
             }
         }
 
@@ -259,11 +223,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_publisherSupportLink, value))
-                {
-                    _publisherSupportLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherSupportLink)));
-                }
+                _publisherSupportLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PublisherSupportLink)));
             }
         }
 
@@ -275,11 +236,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_locale, value))
-                {
-                    _locale = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Locale)));
-                }
+                _locale = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Locale)));
             }
         }
 
@@ -291,11 +249,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_copyRight, value))
-                {
-                    _copyRight = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CopyRight)));
-                }
+                _copyRight = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CopyRight)));
             }
         }
 
@@ -307,11 +262,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isCopyRightLinkExisted, value))
-                {
-                    _isCopyRightLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCopyRightLinkExisted)));
-                }
+                _isCopyRightLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCopyRightLinkExisted)));
             }
         }
 
@@ -323,11 +275,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_copyRightLink, value))
-                {
-                    _copyRightLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CopyRightLink)));
-                }
+                _copyRightLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CopyRightLink)));
             }
         }
 
@@ -339,11 +288,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_license, value))
-                {
-                    _license = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(License)));
-                }
+                _license = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(License)));
             }
         }
 
@@ -355,11 +301,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isLicenseLinkExisted, value))
-                {
-                    _isLicenseLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLicenseLinkExisted)));
-                }
+                _isLicenseLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLicenseLinkExisted)));
             }
         }
 
@@ -371,11 +314,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_licenseLink, value))
-                {
-                    _licenseLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LicenseLink)));
-                }
+                _licenseLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LicenseLink)));
             }
         }
 
@@ -387,11 +327,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPrivacyLinkExisted, value))
-                {
-                    _isPrivacyLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrivacyLinkExisted)));
-                }
+                _isPrivacyLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrivacyLinkExisted)));
             }
         }
 
@@ -403,11 +340,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_privacyLink, value))
-                {
-                    _privacyLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PrivacyLink)));
-                }
+                _privacyLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PrivacyLink)));
             }
         }
 
@@ -419,11 +353,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPurchaseLinkExisted, value))
-                {
-                    _isPurchaseLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPurchaseLinkExisted)));
-                }
+                _isPurchaseLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPurchaseLinkExisted)));
             }
         }
 
@@ -435,11 +366,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_purchaseLink, value))
-                {
-                    _purchaseLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PurchaseLink)));
-                }
+                _purchaseLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PurchaseLink)));
             }
         }
 
@@ -451,11 +379,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_releaseNotes, value))
-                {
-                    _releaseNotes = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ReleaseNotes)));
-                }
+                _releaseNotes = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ReleaseNotes)));
             }
         }
 
@@ -467,11 +392,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isReleaseNotesLinkExisted, value))
-                {
-                    _isReleaseNotesLinkExisted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsReleaseNotesLinkExisted)));
-                }
+                _isReleaseNotesLinkExisted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsReleaseNotesLinkExisted)));
             }
         }
 
@@ -483,11 +405,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_releaseNotesLink, value))
-                {
-                    _releaseNotesLink = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ReleaseNotesLink)));
-                }
+                _releaseNotesLink = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ReleaseNotesLink)));
             }
         }
 

@@ -39,11 +39,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isLoadCompleted, value))
-                {
-                    _isLoadCompleted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
-                }
+                _isLoadCompleted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadCompleted)));
             }
         }
 

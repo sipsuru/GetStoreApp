@@ -20,11 +20,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_logoImage, value))
-                {
-                    _logoImage = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LogoImage)));
-                }
+                _logoImage = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LogoImage)));
             }
         }
 
@@ -79,11 +76,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isOperating, value))
-                {
-                    _isOperating = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsOperating)));
-                }
+                _isOperating = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsOperating)));
             }
         }
 
@@ -98,11 +92,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_packageOperationProgress, value))
-                {
-                    _packageOperationProgress = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageOperationProgress)));
-                }
+                _packageOperationProgress = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageOperationProgress)));
             }
         }
 

@@ -22,11 +22,8 @@ namespace GetStoreApp.Services.Settings
 
             private set
             {
-                if (!Equals(_cancelAutoUpdateValue, value))
-                {
-                    _cancelAutoUpdateValue = value;
-                    PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(CancelAutoUpdateValue)));
-                }
+                _cancelAutoUpdateValue = value;
+                PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(CancelAutoUpdateValue)));
             }
         }
 

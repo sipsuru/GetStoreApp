@@ -154,11 +154,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_explicit, value))
-                {
-                    _explicit = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Explicit)));
-                }
+                _explicit = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Explicit)));
             }
         }
 
@@ -170,11 +167,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_selectedCatalogTrustLevel, value))
-                {
-                    _selectedCatalogTrustLevel = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedCatalogTrustLevel)));
-                }
+                _selectedCatalogTrustLevel = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedCatalogTrustLevel)));
             }
         }
 

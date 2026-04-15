@@ -42,11 +42,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_downloadFolder, value))
-                {
-                    _downloadFolder = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadFolder)));
-                }
+                _downloadFolder = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadFolder)));
             }
         }
 
@@ -58,11 +55,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_manualSetDownloadFolder, value))
-                {
-                    _manualSetDownloadFolder = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ManualSetDownloadFolder)));
-                }
+                _manualSetDownloadFolder = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ManualSetDownloadFolder)));
             }
         }
 
@@ -74,11 +68,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_doEngineMode, value))
-                {
-                    _doEngineMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DoEngineMode)));
-                }
+                _doEngineMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DoEngineMode)));
             }
         }
 

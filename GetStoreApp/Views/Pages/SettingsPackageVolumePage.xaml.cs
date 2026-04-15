@@ -67,11 +67,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageVolumeResultKind, value))
-                {
-                    _packageVolumeResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
-                }
+                _packageVolumeResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
             }
         }
 
@@ -83,11 +80,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_packageVolumeFailedContent, value))
-                {
-                    _packageVolumeFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeFailedContent)));
-                }
+                _packageVolumeFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeFailedContent)));
             }
         }
 

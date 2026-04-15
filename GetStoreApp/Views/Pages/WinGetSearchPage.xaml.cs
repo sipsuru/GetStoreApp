@@ -65,11 +65,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isIncrease, value))
-                {
-                    _isIncrease = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
-                }
+                _isIncrease = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
             }
         }
 
@@ -81,11 +78,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_searchAppsResultKind, value))
-                {
-                    _searchAppsResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchAppsResultKind)));
-                }
+                _searchAppsResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchAppsResultKind)));
             }
         }
 
@@ -97,11 +91,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageMatchField, value))
-                {
-                    _packageMatchField = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageMatchField)));
-                }
+                _packageMatchField = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageMatchField)));
             }
         }
 
@@ -113,11 +104,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageFieldMatchOption, value))
-                {
-                    _packageFieldMatchOption = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFieldMatchOption)));
-                }
+                _packageFieldMatchOption = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageFieldMatchOption)));
             }
         }
 
@@ -129,11 +117,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_searchFailedContent, value))
-                {
-                    _searchFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchFailedContent)));
-                }
+                _searchFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchFailedContent)));
             }
         }
 

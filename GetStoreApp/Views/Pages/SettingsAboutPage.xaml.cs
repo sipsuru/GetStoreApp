@@ -36,11 +36,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isChecking, value))
-                {
-                    _isChecking = value;
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(IsChecking)));
-                }
+                _isChecking = value;
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(IsChecking)));
             }
         }
 

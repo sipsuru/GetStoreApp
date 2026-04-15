@@ -25,11 +25,8 @@ namespace GetStoreApp.Services.Settings
 
             private set
             {
-                if (!Equals(_notificationSetting, value))
-                {
-                    _notificationSetting = value;
-                    PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(NotificationSetting)));
-                }
+                _notificationSetting = value;
+                PropertyChanged?.Invoke(null, new PropertyChangedEventArgs(nameof(NotificationSetting)));
             }
         }
 

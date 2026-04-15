@@ -99,11 +99,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isIncrease, value))
-                {
-                    _isIncrease = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
-                }
+                _isIncrease = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
             }
         }
 
@@ -115,11 +112,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_appManagerResultKind, value))
-                {
-                    _appManagerResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppManagerResultKind)));
-                }
+                _appManagerResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppManagerResultKind)));
             }
         }
 
@@ -131,11 +125,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isAppFramework, value))
-                {
-                    _isAppFramework = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppFramework)));
-                }
+                _isAppFramework = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppFramework)));
             }
         }
 
@@ -147,11 +138,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedAppSortRuleKind, value))
-                {
-                    _selectedAppSortRuleKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
-                }
+                _selectedAppSortRuleKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
             }
         }
 
@@ -163,11 +151,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isStoreSignatureSelected, value))
-                {
-                    _isStoreSignatureSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsStoreSignatureSelected)));
-                }
+                _isStoreSignatureSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsStoreSignatureSelected)));
             }
         }
 
@@ -179,11 +164,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isSystemSignatureSelected, value))
-                {
-                    _isSystemSignatureSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSystemSignatureSelected)));
-                }
+                _isSystemSignatureSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSystemSignatureSelected)));
             }
         }
 
@@ -195,11 +177,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isEnterpriseSignatureSelected, value))
-                {
-                    _isEnterpriseSignatureSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsEnterpriseSignatureSelected)));
-                }
+                _isEnterpriseSignatureSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsEnterpriseSignatureSelected)));
             }
         }
 
@@ -211,11 +190,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isDeveloperSignatureSelected, value))
-                {
-                    _isDeveloperSignatureSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsDeveloperSignatureSelected)));
-                }
+                _isDeveloperSignatureSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsDeveloperSignatureSelected)));
             }
         }
 
@@ -227,11 +203,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isNoneSignatureSelected, value))
-                {
-                    _isNoneSignatureSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsNoneSignatureSelected)));
-                }
+                _isNoneSignatureSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsNoneSignatureSelected)));
             }
         }
 
@@ -243,11 +216,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_appManagerFailedContent, value))
-                {
-                    _appManagerFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppManagerFailedContent)));
-                }
+                _appManagerFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppManagerFailedContent)));
             }
         }
 

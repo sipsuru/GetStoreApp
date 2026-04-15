@@ -34,11 +34,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_currentWinGetSource, value))
-                {
-                    _currentWinGetSource = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentWinGetSource)));
-                }
+                _currentWinGetSource = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentWinGetSource)));
             }
         }
 
@@ -50,11 +47,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_winGetSource, value))
-                {
-                    _winGetSource = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WinGetSource)));
-                }
+                _winGetSource = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WinGetSource)));
             }
         }
 

@@ -47,11 +47,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isPrimaryEnabled, value))
-                {
-                    _isPrimaryEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrimaryEnabled)));
-                }
+                _isPrimaryEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrimaryEnabled)));
             }
         }
 
@@ -63,11 +60,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_packageVolumeResultKind, value))
-                {
-                    _packageVolumeResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
-                }
+                _packageVolumeResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
             }
         }
 
@@ -79,11 +73,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_selectedPackageVolume, value))
-                {
-                    _selectedPackageVolume = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageVolume)));
-                }
+                _selectedPackageVolume = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageVolume)));
             }
         }
 
@@ -95,11 +86,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!string.Equals(_selectedFolder, value))
-                {
-                    _selectedFolder = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedFolder)));
-                }
+                _selectedFolder = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedFolder)));
             }
         }
 
@@ -111,11 +99,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_useWindowsAppsFolderValue, value))
-                {
-                    _useWindowsAppsFolderValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UseWindowsAppsFolderValue)));
-                }
+                _useWindowsAppsFolderValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UseWindowsAppsFolderValue)));
             }
         }
 
@@ -127,11 +112,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_setDefaultVolumeValue, value))
-                {
-                    _setDefaultVolumeValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SetDefaultVolumeValue)));
-                }
+                _setDefaultVolumeValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SetDefaultVolumeValue)));
             }
         }
 
@@ -143,11 +125,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isAddingPackageVolume, value))
-                {
-                    _isAddingPackageVolume = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAddingPackageVolume)));
-                }
+                _isAddingPackageVolume = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAddingPackageVolume)));
             }
         }
 

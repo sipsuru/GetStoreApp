@@ -57,11 +57,8 @@ namespace GetStoreApp.Views.Pages
 
             private set
             {
-                if (!Equals(_isLoadedCompleted, value))
-                {
-                    _isLoadedCompleted = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadedCompleted)));
-                }
+                _isLoadedCompleted = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsLoadedCompleted)));
             }
         }
 

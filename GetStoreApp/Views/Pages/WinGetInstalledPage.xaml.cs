@@ -70,11 +70,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isIncrease, value))
-                {
-                    _isIncrease = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
-                }
+                _isIncrease = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
             }
         }
 
@@ -86,11 +83,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedAppSortRuleKind, value))
-                {
-                    _selectedAppSortRuleKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
-                }
+                _selectedAppSortRuleKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
             }
         }
 
@@ -102,11 +96,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_force, value))
-                {
-                    _force = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Force)));
-                }
+                _force = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Force)));
             }
         }
 
@@ -118,11 +109,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedPackageUninstallScopeIndex, value))
-                {
-                    _selectedPackageUninstallScopeIndex = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageUninstallScopeIndex)));
-                }
+                _selectedPackageUninstallScopeIndex = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageUninstallScopeIndex)));
             }
         }
 
@@ -134,11 +122,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedPackageUninstallModeIndex, value))
-                {
-                    _selectedPackageUninstallModeIndex = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageUninstallModeIndex)));
-                }
+                _selectedPackageUninstallModeIndex = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageUninstallModeIndex)));
             }
         }
 
@@ -150,11 +135,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_installedAppsResultKind, value))
-                {
-                    _installedAppsResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstalledAppsResultKind)));
-                }
+                _installedAppsResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstalledAppsResultKind)));
             }
         }
 
@@ -166,11 +148,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_installedFailedContent, value))
-                {
-                    _installedFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstalledFailedContent)));
-                }
+                _installedFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstalledFailedContent)));
             }
         }
 

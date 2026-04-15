@@ -23,11 +23,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isSelected, value))
-                {
-                    _isSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
-                }
+                _isSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
             }
         }
 
@@ -42,11 +39,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isSelectMode, value))
-                {
-                    _isSelectMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
-                }
+                _isSelectMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
             }
         }
 
@@ -61,11 +55,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isOperating, value))
-                {
-                    _isOperating = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsOperating)));
-                }
+                _isOperating = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsOperating)));
             }
         }
 
@@ -103,11 +94,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_downloadProgressState, value))
-                {
-                    _downloadProgressState = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadProgressState)));
-                }
+                _downloadProgressState = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadProgressState)));
             }
         }
 
@@ -122,11 +110,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_completedSize, value))
-                {
-                    _completedSize = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CompletedSize)));
-                }
+                _completedSize = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CompletedSize)));
             }
         }
 
@@ -141,11 +126,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_totalSize, value))
-                {
-                    _totalSize = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TotalSize)));
-                }
+                _totalSize = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TotalSize)));
             }
         }
 
@@ -160,11 +142,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_downloadSpeed, value))
-                {
-                    _downloadSpeed = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadSpeed)));
-                }
+                _downloadSpeed = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DownloadSpeed)));
             }
         }
 

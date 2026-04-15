@@ -65,11 +65,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_backdrop, value))
-                {
-                    _backdrop = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Backdrop)));
-                }
+                _backdrop = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Backdrop)));
             }
         }
 
@@ -81,11 +78,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_alwaysShowBackdropValue, value))
-                {
-                    _alwaysShowBackdropValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AlwaysShowBackdropValue)));
-                }
+                _alwaysShowBackdropValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AlwaysShowBackdropValue)));
             }
         }
 
@@ -97,11 +91,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_alwaysShowBackdropEnabled, value))
-                {
-                    _alwaysShowBackdropEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AlwaysShowBackdropEnabled)));
-                }
+                _alwaysShowBackdropEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AlwaysShowBackdropEnabled)));
             }
         }
 
@@ -113,11 +104,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_advancedEffectsEnabled, value))
-                {
-                    _advancedEffectsEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AdvancedEffectsEnabled)));
-                }
+                _advancedEffectsEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AdvancedEffectsEnabled)));
             }
         }
 
@@ -129,11 +117,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_appLanguage, value))
-                {
-                    _appLanguage = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppLanguage)));
-                }
+                _appLanguage = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppLanguage)));
             }
         }
 
@@ -145,11 +130,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_topMostValue, value))
-                {
-                    _topMostValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TopMostValue)));
-                }
+                _topMostValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TopMostValue)));
             }
         }
 

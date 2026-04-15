@@ -39,11 +39,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isUninstalling, value))
-                {
-                    _isUninstalling = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUninstalling)));
-                }
+                _isUninstalling = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUninstalling)));
             }
         }
 

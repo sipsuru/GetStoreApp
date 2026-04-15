@@ -44,11 +44,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isUpgrading, value))
-                {
-                    _isUpgrading = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUpgrading)));
-                }
+                _isUpgrading = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsUpgrading)));
             }
         }
 

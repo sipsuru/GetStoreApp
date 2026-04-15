@@ -48,11 +48,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedSearchType, value))
-                {
-                    _selectedSearchType = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedSearchType)));
-                }
+                _selectedSearchType = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedSearchType)));
             }
         }
 
@@ -64,11 +61,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_searchText, value))
-                {
-                    _searchText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchText)));
-                }
+                _searchText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SearchText)));
             }
         }
 
@@ -80,11 +74,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_resultSeverity, value))
-                {
-                    _resultSeverity = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultSeverity)));
-                }
+                _resultSeverity = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultSeverity)));
             }
         }
 
@@ -96,11 +87,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_stateInfoText, value))
-                {
-                    _stateInfoText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(StateInfoText)));
-                }
+                _stateInfoText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(StateInfoText)));
             }
         }
 
@@ -112,11 +100,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isSearchingStore, value))
-                {
-                    _isSearchingStore = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSearchingStore)));
-                }
+                _isSearchingStore = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSearchingStore)));
             }
         }
 
@@ -128,11 +113,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isRingActive, value))
-                {
-                    _isRingActive = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRingActive)));
-                }
+                _isRingActive = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRingActive)));
             }
         }
 
@@ -144,11 +126,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_resultControlVisible, value))
-                {
-                    _resultControlVisible = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultControlVisible)));
-                }
+                _resultControlVisible = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultControlVisible)));
             }
         }
 
@@ -160,11 +139,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isSelectMode, value))
-                {
-                    _isSelectMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
-                }
+                _isSelectMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
             }
         }
 

@@ -48,11 +48,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPreviousEnabled, value))
-                {
-                    _isPreviousEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPreviousEnabled)));
-                }
+                _isPreviousEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPreviousEnabled)));
             }
         }
 
@@ -64,11 +61,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isNextEnabled, value))
-                {
-                    _isNextEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsNextEnabled)));
-                }
+                _isNextEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsNextEnabled)));
             }
         }
 
@@ -80,11 +74,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedItem, value))
-                {
-                    _selectedItem = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
-                }
+                _selectedItem = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
             }
         }
 

@@ -68,11 +68,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedType, value))
-                {
-                    _selectedType = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedType)));
-                }
+                _selectedType = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedType)));
             }
         }
 
@@ -84,11 +81,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedChannel, value))
-                {
-                    _selectedChannel = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedChannel)));
-                }
+                _selectedChannel = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedChannel)));
             }
         }
 
@@ -100,11 +94,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_linkPlaceHolderText, value))
-                {
-                    _linkPlaceHolderText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LinkPlaceHolderText)));
-                }
+                _linkPlaceHolderText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LinkPlaceHolderText)));
             }
         }
 
@@ -116,11 +107,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_linkText, value))
-                {
-                    _linkText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LinkText)));
-                }
+                _linkText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LinkText)));
             }
         }
 
@@ -132,11 +120,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isQueryingLinks, value))
-                {
-                    _isQueryingLinks = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsQueryingLinks)));
-                }
+                _isQueryingLinks = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsQueryingLinks)));
             }
         }
 
@@ -148,11 +133,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_appInfo, value))
-                {
-                    _appInfo = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInfo)));
-                }
+                _appInfo = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AppInfo)));
             }
         }
 
@@ -164,11 +146,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_resultSeverity, value))
-                {
-                    _resultSeverity = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultSeverity)));
-                }
+                _resultSeverity = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultSeverity)));
             }
         }
 
@@ -180,11 +159,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_stateInfoText, value))
-                {
-                    _stateInfoText = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(StateInfoText)));
-                }
+                _stateInfoText = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(StateInfoText)));
             }
         }
 
@@ -196,11 +172,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isRingActive, value))
-                {
-                    _isRingActive = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRingActive)));
-                }
+                _isRingActive = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRingActive)));
             }
         }
 
@@ -212,11 +185,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_resultControlVisible, value))
-                {
-                    _resultControlVisible = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultControlVisible)));
-                }
+                _resultControlVisible = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ResultControlVisible)));
             }
         }
 
@@ -228,11 +198,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isAppInfoVisible, value))
-                {
-                    _isAppInfoVisible = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInfoVisible)));
-                }
+                _isAppInfoVisible = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsAppInfoVisible)));
             }
         }
 
@@ -244,11 +211,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isPackagedApp, value))
-                {
-                    _isPackagedApp = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackagedApp)));
-                }
+                _isPackagedApp = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPackagedApp)));
             }
         }
 
@@ -260,11 +224,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isSelectMode, value))
-                {
-                    _isSelectMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
-                }
+                _isSelectMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
             }
         }
 

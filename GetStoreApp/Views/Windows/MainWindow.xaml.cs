@@ -75,11 +75,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!string.Equals(_windowTitle, value))
-                {
-                    _windowTitle = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTitle)));
-                }
+                _windowTitle = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTitle)));
             }
         }
 
@@ -91,11 +88,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!Equals(_windowSystemBackdrop, value))
-                {
-                    _windowSystemBackdrop = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
-                }
+                _windowSystemBackdrop = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowSystemBackdrop)));
             }
         }
 
@@ -107,11 +101,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!Equals(_windowTheme, value))
-                {
-                    _windowTheme = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
-                }
+                _windowTheme = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(WindowTheme)));
             }
         }
 
@@ -123,11 +114,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!Equals(_isWindowMaximized, value))
-                {
-                    _isWindowMaximized = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
-                }
+                _isWindowMaximized = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsWindowMaximized)));
             }
         }
 
@@ -139,11 +127,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!Equals(_isBackEnabled, value))
-                {
-                    _isBackEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsBackEnabled)));
-                }
+                _isBackEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsBackEnabled)));
             }
         }
 
@@ -155,11 +140,8 @@ namespace GetStoreApp.Views.Windows
 
             set
             {
-                if (!Equals(_selectedItem, value))
-                {
-                    _selectedItem = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
-                }
+                _selectedItem = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
             }
         }
 

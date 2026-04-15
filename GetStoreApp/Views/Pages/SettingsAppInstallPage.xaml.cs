@@ -27,11 +27,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_allowUnsignedPackageValue, value))
-                {
-                    _allowUnsignedPackageValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowUnsignedPackageValue)));
-                }
+                _allowUnsignedPackageValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowUnsignedPackageValue)));
             }
         }
 
@@ -43,11 +40,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_forceAppShutdownValue, value))
-                {
-                    _forceAppShutdownValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceAppShutdownValue)));
-                }
+                _forceAppShutdownValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceAppShutdownValue)));
             }
         }
 
@@ -59,11 +53,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_forceTargetAppShutdownValue, value))
-                {
-                    _forceTargetAppShutdownValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceTargetAppShutdownValue)));
-                }
+                _forceTargetAppShutdownValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ForceTargetAppShutdownValue)));
             }
         }
 

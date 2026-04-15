@@ -83,11 +83,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageOperationKind, value))
-                {
-                    _packageOperationKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageOperationKind)));
-                }
+                _packageOperationKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageOperationKind)));
             }
         }
 
@@ -99,11 +96,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_allowHashMismatch, value))
-                {
-                    _allowHashMismatch = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowHashMismatch)));
-                }
+                _allowHashMismatch = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowHashMismatch)));
             }
         }
 
@@ -115,11 +109,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_packageDownloadPath, value))
-                {
-                    _packageDownloadPath = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageDownloadPath)));
-                }
+                _packageDownloadPath = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageDownloadPath)));
             }
         }
 
@@ -131,11 +122,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageInstallScope, value))
-                {
-                    _packageInstallScope = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallScope)));
-                }
+                _packageInstallScope = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallScope)));
             }
         }
 
@@ -147,11 +135,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageArchitecture, value))
-                {
-                    _packageArchitecture = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageArchitecture)));
-                }
+                _packageArchitecture = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageArchitecture)));
             }
         }
 
@@ -163,11 +148,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_bypassIsStoreClientBlockedPolicyCheck, value))
-                {
-                    _bypassIsStoreClientBlockedPolicyCheck = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(BypassIsStoreClientBlockedPolicyCheck)));
-                }
+                _bypassIsStoreClientBlockedPolicyCheck = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(BypassIsStoreClientBlockedPolicyCheck)));
             }
         }
 
@@ -179,11 +161,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_AllowUpgradeToUnknownVersion, value))
-                {
-                    _AllowUpgradeToUnknownVersion = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowUpgradeToUnknownVersion)));
-                }
+                _AllowUpgradeToUnknownVersion = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllowUpgradeToUnknownVersion)));
             }
         }
 
@@ -195,11 +174,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_force, value))
-                {
-                    _force = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Force)));
-                }
+                _force = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Force)));
             }
         }
 
@@ -211,11 +187,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageInstallMode, value))
-                {
-                    _packageInstallMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallMode)));
-                }
+                _packageInstallMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallMode)));
             }
         }
 
@@ -227,11 +200,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_packageInstallPath, value))
-                {
-                    _packageInstallPath = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallPath)));
-                }
+                _packageInstallPath = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageInstallPath)));
             }
         }
 
@@ -243,11 +213,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isX86ProcessorArchitecture, value))
-                {
-                    _isX86ProcessorArchitecture = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsX86ProcessorArchitecture)));
-                }
+                _isX86ProcessorArchitecture = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsX86ProcessorArchitecture)));
             }
         }
 
@@ -259,11 +226,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isX64ProcessorArchitecture, value))
-                {
-                    _isX64ProcessorArchitecture = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsX64ProcessorArchitecture)));
-                }
+                _isX64ProcessorArchitecture = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsX64ProcessorArchitecture)));
             }
         }
 
@@ -275,11 +239,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isArm64ProcessorArchitecture, value))
-                {
-                    _isArm64ProcessorArchitecture = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsArm64ProcessorArchitecture)));
-                }
+                _isArm64ProcessorArchitecture = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsArm64ProcessorArchitecture)));
             }
         }
 
@@ -291,11 +252,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_additionalInstallerArguments, value))
-                {
-                    _additionalInstallerArguments = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AdditionalInstallerArguments)));
-                }
+                _additionalInstallerArguments = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AdditionalInstallerArguments)));
             }
         }
 
@@ -307,11 +265,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageRepairScope, value))
-                {
-                    _packageRepairScope = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageRepairScope)));
-                }
+                _packageRepairScope = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageRepairScope)));
             }
         }
 
@@ -323,11 +278,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_packageRepairMode, value))
-                {
-                    _packageRepairMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageRepairMode)));
-                }
+                _packageRepairMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageRepairMode)));
             }
         }
 

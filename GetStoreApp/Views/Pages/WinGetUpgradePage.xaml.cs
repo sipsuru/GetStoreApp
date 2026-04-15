@@ -51,11 +51,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_isIncrease, value))
-                {
-                    _isIncrease = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
-                }
+                _isIncrease = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsIncrease)));
             }
         }
 
@@ -67,11 +64,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_selectedAppSortRuleKind, value))
-                {
-                    _selectedAppSortRuleKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
-                }
+                _selectedAppSortRuleKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedAppSortRuleKind)));
             }
         }
 
@@ -83,11 +77,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!Equals(_upgradableAppsResultKind, value))
-                {
-                    _upgradableAppsResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpgradableAppsResultKind)));
-                }
+                _upgradableAppsResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpgradableAppsResultKind)));
             }
         }
 
@@ -99,11 +90,8 @@ namespace GetStoreApp.Views.Pages
 
             set
             {
-                if (!string.Equals(_upgradableFailedContent, value))
-                {
-                    _upgradableFailedContent = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpgradableFailedContent)));
-                }
+                _upgradableFailedContent = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(UpgradableFailedContent)));
             }
         }
 

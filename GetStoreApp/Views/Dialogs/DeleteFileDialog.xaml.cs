@@ -19,11 +19,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_deleteFileSameTime, value))
-                {
-                    _deleteFileSameTime = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DeleteFileSameTime)));
-                }
+                _deleteFileSameTime = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(DeleteFileSameTime)));
             }
         }
 

@@ -35,11 +35,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isPrimaryEnabled, value))
-                {
-                    _isPrimaryEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrimaryEnabled)));
-                }
+                _isPrimaryEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsPrimaryEnabled)));
             }
         }
 
@@ -51,11 +48,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_packageVolumeResultKind, value))
-                {
-                    _packageVolumeResultKind = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
-                }
+                _packageVolumeResultKind = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(PackageVolumeResultKind)));
             }
         }
 
@@ -67,11 +61,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_currentPackageVolume, value))
-                {
-                    _currentPackageVolume = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentPackageVolume)));
-                }
+                _currentPackageVolume = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CurrentPackageVolume)));
             }
         }
 
@@ -83,11 +74,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_selectedPackageVolume, value))
-                {
-                    _selectedPackageVolume = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageVolume)));
-                }
+                _selectedPackageVolume = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPackageVolume)));
             }
         }
 
@@ -99,11 +87,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isRemovingPackageVolume, value))
-                {
-                    _isRemovingPackageVolume = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRemovingPackageVolume)));
-                }
+                _isRemovingPackageVolume = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRemovingPackageVolume)));
             }
         }
 
@@ -115,11 +100,8 @@ namespace GetStoreApp.Views.Dialogs
 
             set
             {
-                if (!Equals(_isRemovePackageVolumeEnabled, value))
-                {
-                    _isRemovePackageVolumeEnabled = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRemovePackageVolumeEnabled)));
-                }
+                _isRemovePackageVolumeEnabled = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsRemovePackageVolumeEnabled)));
             }
         }
 

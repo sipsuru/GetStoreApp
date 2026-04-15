@@ -16,11 +16,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_iconImage, value))
-                {
-                    _iconImage = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IconImage)));
-                }
+                _iconImage = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IconImage)));
             }
         }
 
@@ -35,11 +32,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isSelected, value))
-                {
-                    _isSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
-                }
+                _isSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
             }
         }
 
@@ -54,11 +48,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isSelectMode, value))
-                {
-                    _isSelectMode = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
-                }
+                _isSelectMode = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelectMode)));
             }
         }
 
@@ -98,11 +89,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isInstalling, value))
-                {
-                    _isInstalling = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstalling)));
-                }
+                _isInstalling = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstalling)));
             }
         }
 
@@ -117,11 +105,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_installProgressValue, value))
-                {
-                    _installProgressValue = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallProgressValue)));
-                }
+                _installProgressValue = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallProgressValue)));
             }
         }
 
@@ -136,11 +121,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isInstallWaiting, value))
-                {
-                    _isInstallWaiting = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallWaiting)));
-                }
+                _isInstallWaiting = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsInstallWaiting)));
             }
         }
 
@@ -152,11 +134,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!string.Equals(_installStateString, value))
-                {
-                    _installStateString = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallStateString)));
-                }
+                _installStateString = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallStateString)));
             }
         }
 
@@ -171,11 +150,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_installFailed, value))
-                {
-                    _installFailed = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallFailed)));
-                }
+                _installFailed = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(InstallFailed)));
             }
         }
 

@@ -19,11 +19,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isSelected, value))
-                {
-                    _isSelected = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
-                }
+                _isSelected = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSelected)));
             }
         }
 
@@ -38,11 +35,8 @@ namespace GetStoreApp.Models
 
             set
             {
-                if (!Equals(_isCleanFailed, value))
-                {
-                    _isCleanFailed = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCleanFailed)));
-                }
+                _isCleanFailed = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsCleanFailed)));
             }
         }
 
